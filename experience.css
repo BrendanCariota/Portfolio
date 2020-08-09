@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/background-concrete.png");
+  background-color: #222222;
+}
+
+.home-content {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.home-left {
+  position: relative;
+  left: -13%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  width: 300px;
+  background-color: rgb(65, 65, 65);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project:hover {
+  animation: fade-orange 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-orange {
+  from {
+    background-color: rgb(65, 65, 65);
+  }
+  to {
+    background-color: rgb(255, 176, 0.3, 0.5);
+  }
+}
+
+.project h1 {
+  margin-bottom: 15px;
+}
+
+.project button {
+  border: 3px solid #fdad4f;
+  border-radius: 5px;
+  background: none;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.project p {
+  font-size: 0.7rem;
+  margin-bottom: 15px;
+}
+
+.project img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* ---- Main Project Info Model ------*/
+.projectInfo {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(73, 73, 73);
+  top: 150px;
+  left: 450px;
+  width: 600px;
+  height: 75vh;
+  color: white;
+  border-radius: 5px;
+}
+
+.modalHeader {
+  text-align: right;
+  padding: 5px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#closeBtn:hover {
+  color: #fdad4f;
+  cursor: pointer;
+}
+
+.projectBody {
+  margin: 2% 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+#projectType {
+  border: 3px solid #fdad4f;
+  border-radius: 5px;
+  background: none;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#tags {
+  font-size: 0.7rem;
+}
+
+#description {
+  display: none;
+}
+
+/* ------ Contact Button -----*/
+.contact-button {
+  margin-top: 25px;
+  margin-left: 30px;
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #fdad4f;
+  text-decoration: none;
+}
+
+.contact-button svg,
+.contact-button svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+
+.contact-button svg rect {
+  stroke: #fff;
+  stroke-width: 4;
+  transition: 0.5s;
+  stroke-dasharray: 500, 500;
+  stroke-dashoffset: 0;
+}
+
+.contact-button:hover svg rect {
+  stroke-dasharray: 100, 400;
+  stroke-dashoffset: 220;
+  stroke: #fdad4f;
+}
+
+/* ---------- Nav Labels ------------*/
+.nav-labels {
+  position: relative;
+  top: 295px;
+  left: -140px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-label {
+  background: #fdad4f;
+  padding: 15px;
+  margin: 22px 0;
+  border-radius: 5px;
+}
+
+/* ------ Nav Hover Animations -------*/
+
+@keyframes roll-in {
+  from {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(1px);
+  }
+}
+
+@keyframes roll-out {
+  from {
+    transform: translateX(1px);
+  }
+  to {
+    transform: translateX(-150px);
+  }
+}
+
+#home {
+  transform: translateX(-150px);
+}
+#about {
+  transform: translateX(-150px);
+}
+#skills {
+  transform: translateX(-150px);
+}
+#experience {
+  transform: translateX(-150px);
+}
+#contact {
+  transform: translateX(-150px);
+}
+
+/* ------------- NAVIGATION BAR ---------------------*/
+
+nav {
+  background: #1a1a1a;
+  width: 60px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+/* Top Section*/
+.nav-top {
+  background: rgb(12, 12, 12);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-text {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+/* Middle Section*/
+.nav-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  padding: 20px 0;
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.social-icon {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.nav-icon:hover {
+  color: #fdad4f;
+}
+
+/* Bottom Section*/
+.nav-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#html {
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/background-concrete.png");
+  background-color: #222222;
+}
+
+.home-content {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.home-left {
+  position: relative;
+  left: -690px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  margin: 0 25%;
+}
+
+#email {
+  margin-left: 20%;
+}
+
+/* ------- Contact Form --------*/
+.contact-form {
+  background-color: rgb(31, 31, 31);
+  padding: 30px;
+  width: 900px;
+  height: 100vh;
+  text-align: left;
+  animation: slide-up 2s ease-in-out forwards;
+}
+
+form {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: rgb(54, 54, 54);
+  border: none;
+  width: 75%;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+form input:focus::placeholder {
+  color: transparent;
+}
+
+#contact-form-title {
+  font-size: 4rem;
+  color: #fdad4f;
+  padding-bottom: 20px;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+}
+
+textarea {
+  background-color: rgb(54, 54, 54);
+  border: none;
+  width: 75%;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ------ Contact Button -----*/
+.contact-button {
+  margin-top: 25px;
+  margin-left: 320px;
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #fdad4f;
+  text-decoration: none;
+}
+
+.contact-button svg,
+.contact-button svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+
+.contact-button svg rect {
+  stroke: #fff;
+  stroke-width: 4;
+  transition: 0.5s;
+  stroke-dasharray: 500, 500;
+  stroke-dashoffset: 0;
+}
+
+.contact-button:hover svg rect {
+  stroke-dasharray: 100, 400;
+  stroke-dashoffset: 220;
+  stroke: #fdad4f;
+}
+
+/* ---------- Nav Labels ------------*/
+.nav-labels {
+  position: relative;
+  top: 0px;
+  left: -140px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-label {
+  background: #fdad4f;
+  padding: 15px;
+  margin: 22px 0;
+  border-radius: 5px;
+}
+
+/* ------ Nav Hover Animations -------*/
+
+@keyframes roll-in {
+  from {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(1px);
+  }
+}
+
+@keyframes roll-out {
+  from {
+    transform: translateX(1px);
+  }
+  to {
+    transform: translateX(-150px);
+  }
+}
+
+#home {
+  transform: translateX(-150px);
+}
+#about {
+  transform: translateX(-150px);
+}
+#skills {
+  transform: translateX(-150px);
+}
+#experience {
+  transform: translateX(-150px);
+}
+#contact {
+  transform: translateX(-150px);
+}
+
+/* ------------- NAVIGATION BAR ---------------------*/
+
+nav {
+  background: #1a1a1a;
+  width: 60px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+/* Top Section*/
+.nav-top {
+  background: rgb(12, 12, 12);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-text {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+/* Middle Section*/
+.nav-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  padding: 20px 0;
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.social-icon {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.nav-icon:hover {
+  color: #fdad4f;
+}
+
+/* Bottom Section*/
+.nav-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#html {
+  width: 150px;
+  height: 150px;
+}

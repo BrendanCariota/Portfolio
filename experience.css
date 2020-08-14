@@ -22,13 +22,14 @@ body {
 
 .home-left {
   position: relative;
+  top: 100px;
   left: -13%;
   font-family: "Poppins", sans-serif;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5em;
 }
 
 .project {

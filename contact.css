@@ -260,3 +260,50 @@ nav {
   width: 150px;
   height: 150px;
 }
+
+/* ---- MEDIA QUERIES ---------*/
+
+/* -- Nav Lavels --*/
+@media (max-width: 1850px) {
+  .nav-labels {
+    display: none;
+  }
+}
+
+@media (max-width: 1725px) {
+  .home-left {
+    left: -500px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .home-left {
+    left: -350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-left {
+    left: -175px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-left {
+    left: -275px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-left {
+    left: -225px;
+  }
+
+  #contact-form-title {
+    font-size: 2rem;
+  }
+
+  #email {
+    font-size: 1.5rem;
+  }
+}

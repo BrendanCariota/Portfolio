@@ -177,7 +177,7 @@ body {
 /* ---------- Nav Labels ------------*/
 .nav-labels {
   position: relative;
-  top: 295px;
+  top: 130px;
   left: -140px;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -299,4 +299,49 @@ nav {
 #html {
   width: 150px;
   height: 150px;
+}
+
+/* ---- MEDIA QUERIES ---------*/
+
+/* -- Nav Lavels --*/
+@media (max-width: 1850px) {
+  .nav-labels {
+    display: none;
+  }
+
+  .home-left {
+    left: 75px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .home-left {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
+
+@media (max-width: 1450px) {
+  .home-left {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+
+@media (max-width: 1400px) {
+  .home-left {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .home-left {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5em;
+  }
 }

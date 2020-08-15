@@ -284,3 +284,38 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+/* ---- MEDIA QUERIES ---------*/
+
+/* -- Nav Lavels --*/
+@media (max-width: 1500px) {
+  .nav-labels {
+    display: none;
+  }
+}
+
+/* -- Home Left Text --*/
+@media (max-width: 1501px) {
+  #large-logo {
+    display: none;
+  }
+
+  .home-content {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1025px) {
+  .home-left {
+    left: 0px;
+  }
+}
+
+@media (max-width: 725px) {
+  .home-left {
+    left: 50px;
+  }
+  .home-left h1 {
+    font-size: 50px;
+  }
+}

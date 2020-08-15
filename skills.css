@@ -41,15 +41,6 @@ body {
   animation: zoom-in 2s ease-in-out forwards;
 }
 
-@keyframes spinner {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
 @keyframes zoom-in {
   0% {
     transform: scale(0);
@@ -183,4 +174,98 @@ nav {
 #html {
   width: 150px;
   height: 150px;
+}
+
+/* ---- MEDIA QUERIES ---------*/
+
+/* -- Nav Lavels --*/
+@media (max-width: 1850px) {
+  .nav-labels {
+    display: none;
+  }
+}
+
+@media (max-width: 1800px) {
+  .home-left {
+    left: -350px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-gap: 100px;
+  }
+
+  .spin {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .home-left {
+    left: -250px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 100px;
+  }
+
+  .spin {
+    width: 100px;
+  }
+}
+
+@media (max-width: 950px) {
+  .home-left {
+    left: -150px;
+    top: -195px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 100px;
+  }
+
+  .spin {
+    width: 100px;
+  }
+}
+
+@media (max-width: 770px) {
+  .home-left {
+    left: -50px;
+    top: -195px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 100px;
+  }
+
+  .spin {
+    width: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-left {
+    left: 0px;
+    top: -195px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 150px;
+    grid-gap: 100px;
+  }
+
+  .spin {
+    width: 100px;
+  }
 }

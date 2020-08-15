@@ -240,3 +240,66 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+/* ---- MEDIA QUERIES ---------*/
+
+/* -- Nav Lavels --*/
+@media (max-width: 1800px) {
+  .nav-labels {
+    display: none;
+  }
+}
+
+/* -- About Section Sizing -- */
+@media (max-width: 1400px) {
+  .home-left {
+    left: 0px;
+    top: -100px;
+  }
+}
+
+@media (max-width: 1250px) {
+  #subtext {
+    width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-left h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+
+  .home-left p {
+    letter-spacing: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: transparent;
+    animation: fade-text-in 2s linear 2s forwards;
+  }
+
+  #subtext {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-left h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+
+  .home-left p {
+    letter-spacing: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    color: transparent;
+    animation: fade-text-in 2s linear 2s forwards;
+  }
+
+  #subtext {
+    width: 200px;
+  }
+}

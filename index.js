@@ -59,6 +59,7 @@ var modal = document.querySelector(".projectInfo");
 var closeBtn = document.querySelector("#closeBtn");
 var netflixProject = document.querySelector("#netflixProject");
 var yelpProject = document.querySelector("#yelpProject");
+var chatProject = document.querySelector("#chatProject");
 var recipeProject = document.querySelector("#recipeProject");
 var colorGameProject = document.querySelector("#colorProject");
 var patatapProject = document.querySelector("#patatapProject");
@@ -72,6 +73,7 @@ var visitBtn = document.querySelector(".contact-button");
 // Open and Close Modal
 netflixProject.addEventListener("click", openModal);
 yelpProject.addEventListener("click", openModal);
+chatProject.addEventListener("click", openModal);
 recipeProject.addEventListener("click", openModal);
 colorGameProject.addEventListener("click", openModal);
 patatapProject.addEventListener("click", openModal);

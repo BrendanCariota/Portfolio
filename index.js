@@ -57,6 +57,7 @@ contactIcon.addEventListener("mouseout", function () {
 // Variables for Info Modal
 var modal = document.querySelector(".projectInfo");
 var closeBtn = document.querySelector("#closeBtn");
+var newsProject = document.querySelector("#newsProject");
 var netflixProject = document.querySelector("#netflixProject");
 var yelpProject = document.querySelector("#yelpProject");
 var chatProject = document.querySelector("#chatProject");
@@ -71,6 +72,7 @@ var projectDescription = document.querySelector("#projectDescription");
 var visitBtn = document.querySelector(".contact-button");
 
 // Open and Close Modal
+newsProject.addEventListener("click", openModal);
 netflixProject.addEventListener("click", openModal);
 yelpProject.addEventListener("click", openModal);
 chatProject.addEventListener("click", openModal);
